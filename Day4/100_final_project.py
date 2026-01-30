@@ -39,6 +39,7 @@ game_image = [scissors, rock, paper]
 spieler_name = input("Wie heißt du?\n")
 print (f"Willkommen {spieler_name} bei Schere, Stein Papier.")
 spieler1 = int(input("Bitte wähle 0 für Schere, 1 für Stein und 2 für Papier!\n"))
+print(f"{spieler_name} wählte: ")
 if spieler1 >= 0 and spieler1 <=2:
     print(game_image[spieler1])
     
@@ -71,4 +72,5 @@ elif (computer == 0 and spieler1 == 1) or (computer == 1 and spieler1 == 2) or (
 elif (computer == 0 and spieler1 == 2) or (computer == 1 and spieler1 == 0) or (computer == 2 and spieler1 == 1):
     print(f"Der Computer hat {computer_ausgabe} gewählt und du hast {spieler_ausgabe} gewählt. Das heißt der Computer hat gewonnen, da {computer_ausgabe} gewinnt gegen {spieler_ausgabe}.")
 else:
+
     print("Da ist etwas schief gelaufen. Versuche es nocheinmal.")
